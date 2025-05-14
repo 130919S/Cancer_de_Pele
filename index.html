@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Proteção Solar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="#">Gráficos</a></li>
+                <li><a href="#">Prevenção</a></li>
+                <li><a href="#">Clima x Câncer de Pele</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="texto">
+                <h1>A exposição ao sol é inevitável.<br><span>Os cuidados, não.</span></h1>
+                <p>O câncer de pele é o tipo <strong>mais comum</strong> no Brasil — e também um dos <strong>mais preveníveis</strong>.</p>
+                <p>Você sabia que a maioria dos casos poderia ser evitada com proteção adequada e diagnóstico precoce?</p>
+                <a href="#" class="botao">A sua saúde começa com a informação.</a>
+            </div>
+            <div class="imagem">
+                <img src="{{ url_for('static', filename='imagens/praia.png') }}" alt="Proteção solar">
+            </div>
+        </section>
+
+        <section class="destaques">
+            <h2>Nesta plataforma, você vai encontrar:</h2>
+            <div class="cards">
+                <div class="card">Informações confiáveis sobre o câncer de pele</div>
+                <div class="card">Gráficos interativos sobre o avanço da doença</div>
+                <div class="card">Dicas práticas para se prevenir</div>
+            </div>
+        </section>
+
+        <section class="impactos">
+            <h2>Impactos do Sol: o que o clima tem a ver com isso?</h2>
+            <p>Estudos recentes apontam que as mudanças climáticas estão diretamente relacionadas ao aumento da radiação solar sobre a Terra, elevando os riscos à saúde humana — em especial, à saúde da pele. Pesquisas publicadas na Nature Scientific Reports (2024) revelam que, dependendo do cenário climático, a temperatura média no Brasil pode subir entre 2.7°C e 4.4°C até o fim do século, com maior impacto nas regiões Centro-Oeste e Sudeste.</p>
+            <p>O Instituto Nacional de Meteorologia (INMET) confirmou que o verão de 2024/2025 foi o sexto mais quente desde 1961, com média de 25,02°C — 0,79°C acima da média histórica (INMET, 2025). Esse aumento constante nas temperaturas resulta em ondas de calor mais frequentes e prolongadas, condição que agrava a exposição da população aos raios UV.</p>
+            <p>Segundo o Instituto Nacional do Câncer (INCA, 2022), a exposição solar excessiva entre 10h e 16h está entre os principais fatores de risco para o desenvolvimento do câncer de pele. Mesmo em dias nublados ou no inverno, os raios UV continuam presentes e perigosos.</p>
+            <p>Além disso, dados apontam que o número de dias consecutivos sob onda de calor no Brasil passou de 7 para 52 nas últimas décadas (Correio Braziliense, 2024), intensificando o alerta sobre os efeitos diretos do aquecimento global na saúde pública.</p>
+            <img src="{{ url_for('static', filename='imagens/rio.png') }}" alt="Imagem do Rio de Janeiro">
+        </section>
+
+        <section class="cuidados">
+            <h2>Cuidados Diários Contra o Câncer de Pele</h2>
+            <ul>
+                <li><strong>Evite o sol entre 10h e 16h.</strong> É nesse período que os raios UV atingem níveis mais perigosos.</li>
+                <li><strong>Use protetor solar com FPS 30 ou superior.</strong> Aplique 30 minutos antes e reaplique.</li>
+                <li><strong>Vista-se de forma consciente.</strong> Roupas longas e escuras ajudam a proteger.</li>
+                <li><strong>Busque sombra sempre que possível.</strong> Mesmo em dias nublados, os raios UV causam danos.</li>
+                <li><strong>Fique atenta aos sinais na pele.</strong> Pintas e manchas devem ser avaliadas por dermatologistas.</li>
+                <li><strong>Não negligencie o inverno.</strong> 80% dos raios UV atravessam as nuvens.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
